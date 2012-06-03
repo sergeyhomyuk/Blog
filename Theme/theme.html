@@ -1,0 +1,333 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>[TITLE]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- styles -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-responsive.min.css" rel="stylesheet">
+    <style>
+        body
+        {
+            background-color: #F4F4F4;
+            color: #333;;
+        }
+        
+        .sidebar
+        {
+            padding-top: 40px;
+            background-color: #F4F4F4;
+        }
+        
+        .content
+        {
+            padding-top: 60px;
+            background-color: white;
+        }
+        
+        .blog-header
+        {
+            text-align: center;
+        }
+        
+        .blog-title
+        {
+            color: #666;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .blog-description
+        {
+        }
+        
+        article
+        {
+            padding: 20px;
+        }
+        
+        .article-title
+        {
+            font-weight: 600;
+        }
+        
+        .article-content
+        {
+            padding: 10px;
+        }
+        
+        .medium-bold
+        {
+            font-weight: 600;
+        }
+        
+        .label a 
+        {
+            text-decoration: none;
+            color: white;
+        }
+        
+        /* Menu */
+        .menu-item
+        {
+            padding: 0 0 0 15px;
+            margin: 0 0 5px;
+            border-left: 5px solid #999;
+        }
+        
+        .menu-item a
+        {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .menu-item:hover
+        {
+            padding: 0 0 0 15px;
+            margin: 0 0 5px;
+            border-left: 5px solid #00A6FC;
+            background-color: #EEE;
+        }
+        .menu-item p
+        {
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22.5px;
+        }
+        .menu-item small
+        {
+            display: block;
+            line-height: 18px;
+            color: #999999;
+        }
+        
+        /* Menu */
+        .article-header
+        {
+            padding: 0 0 0 15px;
+            margin: 0 0 18px;
+            border-left: 5px solid #eeeeee;
+        }
+               
+        .article-header p
+        {
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22.5px;
+        }
+        .article-header small
+        {
+            display: block;
+            line-height: 18px;
+            color: #999999;
+        }        
+        
+        /*head social bookmarks*/
+        
+        .social_bookmarks_container
+        {
+            height: 24px;
+        }
+        
+        .social_bookmarks
+        {
+            position: relative;
+            float: right;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .social_bookmarks li
+        {
+            /*height: 100%;*/
+            float: left;
+            padding: 0;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background-repeat: no-repeat;
+            background-position: -4px center;
+            margin-left: 3px;
+            list-style: none;
+        }
+        
+        .social_bookmarks li a
+        {
+            float: left;
+            width: 32px;
+            line-height: 24px;
+            display: block;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0px;
+            outline: none;
+            padding: 0;
+            height: 32px;
+        }
+        
+        .social_bookmarks .github
+        {
+            background-image: url('icon-github.png');
+        }
+        .social_bookmarks .facebook
+        {
+            background-image: url('icon-facebook.png');
+        }
+        .social_bookmarks .twitter
+        {
+            background-image: url('icon-twitter.png');
+        }
+        .social_bookmarks .linkedin
+        {
+            background-image: url('icon-linkedin.png');
+        }
+        .social_bookmarks .gplus
+        {
+            background-image: url('icon-gplus.png');
+        }
+        
+        .social_bookmarks .github:hover
+        {
+            background-position: -47px center;
+            background-color: #ffa133;
+        }
+        .social_bookmarks .facebook:hover
+        {
+            background-position: -47px center;
+            background-color: #37589b;
+        }
+        .social_bookmarks .twitter:hover
+        {
+            background-position: -47px center;
+            background-color: #46d4fe;
+        }
+        .social_bookmarks .linkedin:hover
+        {
+            background-position: -47px center;
+            background-color: #419cca;
+        }
+        .social_bookmarks .gplus:hover
+        {
+            background-position: -47px center;
+            background-color: #de5a49;
+        }
+        
+        .social_bookmarks li:hover a
+        {
+            background: transparent url('icon-social-reflect.png') 0 -10px no-repeat;
+        }
+    </style>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span2 sidebar">
+                <!-- social bookmarks -->
+                <div class="social_bookmarks_container">
+                    <ul class="social_bookmarks">
+                        <li class="twitter"><a href="http://twitter.com/Kriesi">Follow us on Twitter</a></li>
+                        <li class="facebook"><a href="http://www.facebook.com/kriesi.at">Join our Facebook Group</a></li>
+                        <li class="gplus"><a href="https://plus.google.com/106461359737856957875/posts">Join me on Google Plus</a></li>
+                        <li class="linkedin"><a href="http://www.linkedin.com">Add me on Linkedin</a></li>
+                        <li class="github"><a href="http://www.kriesi.at/themes/sentence/feed/">RSS</a></li>
+                    </ul>
+                </div>
+
+                <hr />
+                <!-- Menu -->
+                <div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <strong><i class="icon-book"></i> Blog</strong>
+                            <small>What I'm thinking</small> 
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <strong><i class="icon-inbox"></i> Sandbox</strong>
+                            <small>What I'm doing</small> 
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <strong><i class="icon-user"></i> Contacts</strong>
+                            <small>How to contact with me</small> 
+                        </a>
+                    </div>
+                </div>
+                <hr />
+                <!-- Tags -->
+                <div>
+                    <blockquote>
+                        <div>
+                            <i class="icon-tags"></i> <strong>Tags:</strong>
+                        </div>
+                        <span class="label">SharePoint (10) </span>&nbsp; <span class="label">Patterns (5)</span>&nbsp;
+                        <span class="label">JavaScript (26) </span>&nbsp; <span class="label">ASP.NET (6)
+                                                                          </span>&nbsp; <span class="label">C# (16) </span>&nbsp;
+                    </blockquote>
+                </div>
+                <!--Sidebar content-->
+            </div>
+            
+            <!-- Content -->
+            <div class="span10 content">
+                <div class="blog-header">
+                    <h1 class="blog-title">
+                        Sergey Homyuk</h1>
+                    <h6 class="blog-description">
+                        Developer: C# // ASP.NET // SharePoint // JavaScript
+                    </h6>
+                </div>
+                <hr/>
+                <article>
+                    <!--Body content-->
+                    <div class="article-header">
+                        <h6> 03/06.2012 // <a href="#">5 comments</a></h6>
+                        <p class="article-title">                             
+                            <h2>My SharePoint Projects Structure.</h2>
+                        </p>
+                        <small>
+                            <span class="label"><a href="#">SharePoint</a></span>
+                            <span class="label">Patterns</span>
+                        </small>
+                    </div>
+                    <div class="article-content">
+                        Структуру своего первого SharePoint проекта я строил, руководствуясь принципами и практиками, которые я выработал, будучи ASP.NET разработчиком. Модульность, слабая связанность между частями проекта, точки агрегации зависимостей - все эти принципы так же удачно ложатся в основу структуры SharePoint проекта, как и в структуру большинства проектов созданных на основании других технологий. Если для вас эта тема нова или же хотите ее освежить, то я настоятельно рекомендую вам ознакомиться с серией статей Simon Ince посвященных созданию архитектуры на базе принципов заложенных в Microsoft Web Client Software Factory. В свое время они перевернули мое представление о том, как надо структурировать проекты.
+                        <hr/>
+                        <div class="article-comments"></div>
+                    </div>
+                    
+                </article>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <footer>
+        (c) Sergey Homyuk
+    </footer>
+    <!-- /container -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style id="_clearly_component__css" type="text/css">#next_pages_container { width: 5px; hight: 5px; position: absolute; top: -100px; left: -100px; z-index: 2147483647 !important; } </style>
+    <div id="_clearly_component__next_pages_container">
+    </div>
+</body>
+</html>
